@@ -12,7 +12,7 @@ export default function Projektbeschreibung() {
       {/* Hero */}
       <div className="relative w-full h-[40vh] md:h-[55vh] bg-blue-900">
         <div
-          className="absolute top-0 left-0 w-full h-[24px] md:h-[48px] z-10"
+          className="hidden md:block absolute top-0 left-0 w-full h-[48px] z-10"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L0,50 Q250,100 500,50 T1000,50 L1000,0 Z' fill='%23ffffff' opacity='0.3'/%3E%3Cpath d='M0,0 L0,60 Q250,20 500,60 T1000,60 L1000,0 Z' fill='%23ffffff' opacity='0.6'/%3E%3Cpath d='M0,0 L0,30 Q250,70 500,30 T1000,30 L1000,0 Z' fill='%23ffffff'/%3E%3C/svg%3E")`,
             backgroundSize: '800px 100%',

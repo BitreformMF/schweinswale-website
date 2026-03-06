@@ -44,7 +44,14 @@
       "Bash(curl -s -L \"https://web.archive.org/web/20250717175013/https://walschutz.org/foerdermitgliedschaftformular/\")",
       "Bash(curl -s -L \"https://web.archive.org/web/20250808014522/https://walschutz.org/patenschaftsformular/\")",
       "Bash(curl -s -L \"https://web.archive.org/web/20250805145610/https://walschutz.org/\")",
-      "Bash(gh auth status)"
+      "Bash(gh auth status)",
+      "Bash(gh repo create schweinswale-website --public --source=. --remote=origin --push --description \"Website für Schweinswale e.V. – Schutz für Schweinswale und Delfine\")",
+      "Bash(rm -rf node_modules package-lock.json)",
+      "Bash(npm install)",
+      "Bash(npx vite build)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(while read f)",
+      "Bash(do sed -i 's/className=\"\"absolute top-0 left-0 w-full h-\\\\[24px\\\\] md:h-\\\\[48px\\\\] z-10\"\"/className=\"\"hidden md:block absolute top-0 left-0 w-full h-[48px] z-10\"\"/g' \"$f\")"
     ]
   }
 }
