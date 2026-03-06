@@ -68,7 +68,7 @@ export default function Kontakt() {
             Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.
           </p>
           <button
-            onClick={() => { setSubmitted(false); setForm({ name: '', email: '', betreff: '', nachricht: '' }); }}
+            onClick={() => { setSubmitted(false); setForm({ name: '', email: '', betreff: '', nachricht: '', datenschutz: false }); }}
             className="bg-[#00c2b2] hover:bg-[#00a89a] text-white font-bold uppercase tracking-wide py-3 px-8 rounded-full transition-colors"
           >
             Neue Nachricht senden

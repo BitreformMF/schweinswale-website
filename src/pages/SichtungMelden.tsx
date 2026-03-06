@@ -117,7 +117,7 @@ export default function SichtungMelden() {
             Ihre Schweinswal-Sichtung wurde erfolgreich übermittelt. Jede Meldung hilft uns, die Schweinswale besser zu schützen!
           </p>
           <button
-            onClick={() => { setSubmitted(false); setPosition(null); setForm({ datum: '', uhrzeit: '', anzahl: '1', verhalten: '', gewaesser: '', beschreibung: '', name: '', email: '', foto: null }); }}
+            onClick={() => { setSubmitted(false); setPosition(null); setForm({ datum: '', uhrzeit: '', anzahl: '1', verhalten: '', gewaesser: '', beschreibung: '', name: '', email: '', foto: null, datenschutz: false }); }}
             className="bg-[#00c2b2] hover:bg-[#00a89a] text-white font-bold uppercase tracking-wide py-3 px-8 rounded-full transition-colors"
           >
             Weitere Sichtung melden
