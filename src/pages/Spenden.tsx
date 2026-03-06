@@ -36,7 +36,7 @@ export default function Spenden() {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">
+        <h1 className="text-2xl sm:text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">
           Helfen Sie den Schweinswalen und Delfinen
         </h1>
         <div className="w-24 h-3 mb-6" style={wavyLine}></div>

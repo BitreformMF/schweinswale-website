@@ -75,7 +75,7 @@ export default function Foerdermitgliedschaft() {
           <div className="w-20 h-20 rounded-full bg-[#00c2b2]/10 flex items-center justify-center mx-auto mb-6">
             <Send className="w-10 h-10 text-[#00c2b2]" />
           </div>
-          <h1 className="text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">Antrag gesendet!</h1>
+          <h1 className="text-2xl sm:text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">Antrag gesendet!</h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
             Vielen Dank für Ihren Antrag auf Fördermitgliedschaft. Wir werden uns so schnell wie möglich bei Ihnen melden.
           </p>
@@ -123,7 +123,7 @@ export default function Foerdermitgliedschaft() {
             <Users className="w-7 h-7 text-[#00c2b2]" />
           </div>
           <div>
-            <h1 className="text-3xl font-black text-slate-800 uppercase tracking-tight">
+            <h1 className="text-xl sm:text-3xl font-black text-slate-800 uppercase tracking-tight">
               Fördermitgliedschaft
             </h1>
           </div>

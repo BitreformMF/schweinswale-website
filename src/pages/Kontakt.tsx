@@ -62,7 +62,7 @@ export default function Kontakt() {
           <div className="w-20 h-20 rounded-full bg-[#00c2b2]/10 flex items-center justify-center mx-auto mb-6">
             <Send className="w-10 h-10 text-[#00c2b2]" />
           </div>
-          <h1 className="text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">Nachricht gesendet!</h1>
+          <h1 className="text-2xl sm:text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">Nachricht gesendet!</h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
             Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden.
           </p>
@@ -105,7 +105,7 @@ export default function Kontakt() {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">
+        <h1 className="text-2xl sm:text-4xl font-black text-slate-800 uppercase tracking-tight mb-4">
           Kontakt
         </h1>
         <div className="w-24 h-3 mb-10" style={wavyLine}></div>

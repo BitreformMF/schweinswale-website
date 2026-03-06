@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+html, body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, label {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
