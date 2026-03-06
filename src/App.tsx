@@ -23,6 +23,7 @@ import Medienspiegel from './pages/Medienspiegel';
 import Foerdermitgliedschaft from './pages/Foerdermitgliedschaft';
 import Patenschaftsformular from './pages/Patenschaftsformular';
 import CookieBanner from './components/CookieBanner';
+import HeroImage from './components/HeroImage';
 
 function useHashRoute() {
   const [route, setRoute] = useState(window.location.hash || '#');
@@ -417,11 +418,9 @@ export default function App() {
               }}
             ></div>
 
-            <img
+            <HeroImage
               src="https://web.archive.org/web/20250805145610im_/https://walschutz.org/wp-content/uploads/2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg"
               alt="Schweinswal – Copyright S. Koschinski, fjord-baelt.dk"
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
             />
           </div>
 

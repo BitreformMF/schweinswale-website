@@ -4,6 +4,7 @@ import { sendEmail } from '../utils/sendEmail';
 import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import HeroImage from '../components/HeroImage';
 
 const wavyLine = {
   backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10' preserveAspectRatio='none'%3E%3Cpath d='M0,5 Q5,0 10,5 T20,5' fill='none' stroke='%2300c2b2' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")`,
@@ -101,12 +102,10 @@ export default function SichtungMelden() {
               backgroundRepeat: 'repeat-x',
             }}
           ></div>
-          <img
-            src="https://web.archive.org/web/20250805145610im_/https://walschutz.org/wp-content/uploads/2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg"
+          <HeroImage
+            src={`https://web.archive.org/web/20250805145610im_/https://walschutz.org/wp-content/uploads/2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg`}
             alt="Schweinswal"
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
+            />
         </div>
         <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <div className="w-20 h-20 rounded-full bg-[#00c2b2]/10 flex items-center justify-center mx-auto mb-6">
@@ -139,12 +138,10 @@ export default function SichtungMelden() {
             backgroundRepeat: 'repeat-x',
           }}
         ></div>
-        <img
-          src="https://web.archive.org/web/20250906010646im_/https://walschutz.org/wp-content/uploads/2018/04/Schweinswale-im-Hamburger-Hafen-Copyright-Wibke-Hildebrandt-300x200.jpg"
+        <HeroImage
+          src={`https://web.archive.org/web/20250906010646im_/https://walschutz.org/wp-content/uploads/2018/04/Schweinswale-im-Hamburger-Hafen-Copyright-Wibke-Hildebrandt-300x200.jpg`}
           alt="Schweinswale im Hamburger Hafen"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
+          />
       </div>
 
       {/* Content */}

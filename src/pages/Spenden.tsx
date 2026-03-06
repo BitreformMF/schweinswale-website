@@ -1,4 +1,5 @@
 import { ChevronRight, Heart, Users, Binoculars, Gift, Building2 } from 'lucide-react';
+import HeroImage from '../components/HeroImage';
 
 const wavyLine = {
   backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10' preserveAspectRatio='none'%3E%3Cpath d='M0,5 Q5,0 10,5 T20,5' fill='none' stroke='%2300c2b2' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")`,
@@ -19,12 +20,10 @@ export default function Spenden() {
             backgroundRepeat: 'repeat-x',
           }}
         ></div>
-        <img
-          src="https://web.archive.org/web/20250906010646im_/https://walschutz.org/wp-content/uploads/2016/11/Schweinswale-Sophia-Wenger6-300x200.jpg"
+        <HeroImage
+          src={`https://web.archive.org/web/20250906010646im_/https://walschutz.org/wp-content/uploads/2016/11/Schweinswale-Sophia-Wenger6-300x200.jpg`}
           alt="Schweinswale"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
+          />
       </div>
 
       {/* Content */}

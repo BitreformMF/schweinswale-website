@@ -1,4 +1,5 @@
 import { ChevronRight, ExternalLink } from 'lucide-react';
+import HeroImage from "../components/HeroImage";
 
 const wavyLine = {
   backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10' preserveAspectRatio='none'%3E%3Cpath d='M0,5 Q5,0 10,5 T20,5' fill='none' stroke='%2300c2b2' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")`,
@@ -21,12 +22,10 @@ export default function Sichtungsprogramm() {
             backgroundRepeat: 'repeat-x',
           }}
         ></div>
-        <img
+        <HeroImage
           src={`${IMG}Zwei_Scheinswale_am_Elbufer_bei_Finkenwerder_by_Sophia_Wenger-300x169.jpg`}
           alt="Schweinswale am Elbufer bei Finkenwerder"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
+          />
       </div>
 
       {/* Content */}

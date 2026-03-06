@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronRight, Calendar, Tag, ArrowLeft } from 'lucide-react';
+import HeroImage from "../components/HeroImage";
 
 const wavyLine = {
   backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10' preserveAspectRatio='none'%3E%3Cpath d='M0,5 Q5,0 10,5 T20,5' fill='none' stroke='%2300c2b2' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")`,
@@ -210,9 +211,9 @@ export default function News() {
             }}
           ></div>
           {article.image ? (
-            <img src={article.image} alt={article.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <HeroImage src={article.image} alt={article.title} />
           ) : (
-            <img src={`${IMG}2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg`} alt="Schweinswal" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <HeroImage src={`${IMG}2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg`} alt="Schweinswal" />
           )}
         </div>
 
@@ -285,12 +286,10 @@ export default function News() {
             backgroundRepeat: 'repeat-x',
           }}
         ></div>
-        <img
+        <HeroImage
           src={`${IMG}2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg`}
           alt="Schweinswal"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
+          />
       </div>
 
       {/* Content */}

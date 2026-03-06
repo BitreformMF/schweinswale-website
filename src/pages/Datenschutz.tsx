@@ -1,4 +1,5 @@
 import { ChevronRight } from 'lucide-react';
+import HeroImage from '../components/HeroImage';
 
 const wavyLine = {
   backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10' preserveAspectRatio='none'%3E%3Cpath d='M0,5 Q5,0 10,5 T20,5' fill='none' stroke='%2300c2b2' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")`,
@@ -19,12 +20,10 @@ export default function Datenschutz() {
             backgroundRepeat: 'repeat-x',
           }}
         ></div>
-        <img
-          src="https://web.archive.org/web/20250805145610im_/https://walschutz.org/wp-content/uploads/2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg"
+        <HeroImage
+          src={`https://web.archive.org/web/20250805145610im_/https://walschutz.org/wp-content/uploads/2017/02/cropped-IMG_1744-Schweinswal-Copyright-S.-Koschinski-www.fjord-baelt.dkWeb_.jpg`}
           alt="Schweinswal"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
+          />
       </div>
 
       {/* Content */}
