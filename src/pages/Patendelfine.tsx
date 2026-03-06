@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { ChevronRight, Heart } from 'lucide-react';
 import HeroImage from '../components/HeroImage';
 
@@ -43,15 +44,28 @@ const dolphins: Dolphin[] = [
 ];
 
 function DolphinCard({ dolphin }: { dolphin: Dolphin }) {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-100">
       <div className="overflow-hidden">
-        <img
-          src={dolphin.img}
-          alt={`Patendelfin ${dolphin.name}`}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-          referrerPolicy="no-referrer"
-        />
+        {imgError ? (
+          <div className="w-full h-48 bg-gradient-to-br from-[#00c2b2]/20 to-blue-900/30 flex flex-col items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" className="w-24 h-16 text-[#00c2b2]/50 mb-2">
+              <path d="M50 15 C35 15 25 25 20 35 C18 30 12 28 8 30 C4 32 2 38 5 42 C8 46 15 45 18 43 C22 50 35 55 50 55 C65 55 78 50 82 43 C85 45 92 46 95 42 C98 38 96 32 92 30 C88 28 82 30 80 35 C75 25 65 15 50 15Z" fill="currentColor"/>
+              <circle cx="38" cy="32" r="3" fill="white"/>
+            </svg>
+            <span className="text-sm font-bold text-slate-500">{dolphin.name}</span>
+          </div>
+        ) : (
+          <img
+            src={dolphin.img}
+            alt={`Patendelfin ${dolphin.name}`}
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+            referrerPolicy="no-referrer"
+            onError={() => setImgError(true)}
+          />
+        )}
       </div>
       <div className="p-5">
         <h3 className="text-xl font-bold text-slate-800 mb-2 group-hover:text-[#00c2b2] transition-colors">{dolphin.name}</h3>
